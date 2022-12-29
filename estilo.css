@@ -1,0 +1,67 @@
+*{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size:1rem;
+}
+
+.contenedorMayor{
+    margin: auto;
+    width: 95vw;
+    height: 95vh;
+    border: rgb(178, 178, 178) 2px solid;
+    display: flex;
+}
+
+.contenedorMayor2{
+    text-align: center;
+ 
+
+}
+
+
+.contenedor {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+
+.div-card{
+    border: solid 1px rgb(188, 190, 188);
+    width: 260px;
+    height: 560px;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.img_cards{
+    width: 210px;
+    height: 250px;
+
+}
+
+.contenedorCarrito{
+    margin: auto;
+    width: 20vw;
+    height: auto;
+    /*border: solid 1px rgb(110, 108, 108);*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: flex-start;*/
+}
+
+.cardCarrito{
+   margin: auto;
+   margin-top: 10px;
+    width: 15vw;
+    height: 18vh;
+    border: solid 2px rgb(6, 6, 6);
+    text-align: center;
+    border-radius: 5px;
+    
+    
+}
