@@ -73,8 +73,18 @@ function cards (){
             localStorage.setItem("arrayCarrito", JSON.stringify(arrayCarrito)); 
             
             const totalCarrito = document.getElementById("totalCarrito");
-              totalCarrito.innerText = `El total del carrito es: $ ${suma} `
+            totalCarrito.innerText = `El total del carrito es: $ ${suma} `
           
+              Toastify({
+                text: "Producto agregado!",
+                duration: 3000,
+                gravity: 'bottom',
+                position: 'right'
+            }).showToast();
+        
+
+
+
            
         }
 
@@ -133,6 +143,30 @@ dibujarCarrito();
 const vaciar = document.getElementById("vaciar");
 
 vaciar.onclick = () =>{
+  //se lanza sweetalert
+  Swal.fire({
+    title: 'Está seguro de vaciar el carrito?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Sí, seguro',
+    cancelButtonText: 'No, no quiero'
+}).then((result) => {
+
+    if (result.isConfirmed) {
+        vaciarCarrito();                    // si se confirma se llama a la funcion que vacia el carrito
+        Swal.fire({
+            title: 'Carrito Vacio!',
+            icon: 'success',
+            text: 'Se han eliminado todos los productos del carrito'
+        })
+    }
+})
+}
+
+  
+
+//funcion para vaciar el carrito
+function vaciarCarrito (){  
 arrayCarrito = [];                  //vacia el array del carrito
 suma = 0;                           // deja en cero la suma del carrito
 totalCarrito.innerText = `El total del carrito es $: ${suma} `    // actualiza el la leyenda que muestra el total
