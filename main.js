@@ -117,7 +117,7 @@ const contenedorCarrito = document.getElementById("contenedorCarrito");
           arrayCarrito.splice(indiceCardEliminar,1);
           localStorage.setItem("arrayCarrito", JSON.stringify(arrayCarrito)); 
          suma = 0;
-         arrayCarrito.forEach((elemento) => {
+         arrayCarrito.forEach((elemento) => {             //si bien esta dentro de un foreach cada card generada con el foreach principal debe tener un boton con su foreach para sumar los elementos del carrito
           suma += elemento.precio * elemento.cantidad;
         });
           totalCarrito.innerText = `El total del carrito es: $ ${suma} `
