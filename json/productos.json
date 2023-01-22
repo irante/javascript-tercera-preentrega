@@ -1,0 +1,10 @@
+
+
+[
+    {"nombre":"PC Bangho Gm220t","Descripcion": "16 gb de ram - ssd 500gb","precio":74999,"img":"./img/gm220t.jpg","id":1,"cantidad":1},
+    {"nombre":"PC Bangho Cambridge A220","Descripcion": "16 gb de ram - ssd 250gb","precio":125999,"img":"./img/cambrige.jpg","id":2,"cantidad":1},
+    {"nombre":"Monitor Gigabyte G24f","Descripcion": "1080p 144hz","precio":84999,"img":"./img/g24f.png","id":3,"cantidad":1},
+    {"nombre":"Notebook Acer Nitro","Descripcion": "8gb de ram - Core I5","precio":224999,"img":"./img/nitro5.jpg","id":4,"cantidad":1}
+
+
+]
